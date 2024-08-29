@@ -1,0 +1,16 @@
+<header>
+  <nav>
+    <menu>
+      <li class="{% if current_path == '/' %}selected{% endif %}">
+        <strong
+          ><a href="{{ url_for('main.home') }}"
+            >Lorem Ipsum Generator</a
+          ></strong
+        >
+      </li>
+      <li class="{% if current_path == '/about-us' %}selected{% endif %}">
+        <a href="{{ url_for('main.about_us') }}">About Us</a>
+      </li></menu
+    >
+  </nav>
+</header>

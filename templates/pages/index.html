@@ -1,0 +1,50 @@
+{% extends 'layouts/default.html' %} {% block head %}
+<script src="{{ url_for('static', filename='js/script.js')}}"></script>
+{% endblock %} {% block main %}
+<p>
+  "Lorem ipsum" is placeholder text commonly used in the publishing and web
+  development industries to fill space where content will eventually be placed.
+  It is a scrambled version of a passage from "De Finibus Bonorum et Malorum," a
+  treatise on ethics written by Cicero in 45 BC. The text is not meaningful but
+  is used to help designers focus on layout and visual elements without being
+  distracted by the actual content.
+</p>
+<p>
+  This text is often used in mockups and wireframes during the design process.
+</p>
+<form class="form">
+  <fieldset>
+    <legend>Settings</legend>
+    <div class="flex column">
+      <label
+        >Number of paragraphs
+        <input
+          type="number"
+          name="number-of-paragraphs"
+          id="number-of-paragraphs"
+          min="1"
+          max="10"
+          value="2"
+        />
+      </label>
+      <label
+        >Start with "Lorem ipsum dolor sit amet…"?
+        <select name="start-with-lorem-ipsum" id="start-with-lorem-ipsum">
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+      </label>
+    </div>
+  </fieldset>
+  <button type="submit">Generate</button>
+</form>
+<div class="response-container" style="display: none">
+  <hr />
+  <article class="response">
+    <header>
+      <h2>Generated Lorem Ipsum</h2>
+    </header>
+    <div id="response-body"></div>
+  </article>
+</div>
+{% endblock %}
