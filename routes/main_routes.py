@@ -50,8 +50,7 @@ def get_lorem_ipsum():
     start_with_lorem_ipsum = request.args.get(
         'start_with_lorem_ipsum', 'true')
 
-    api_url = f'https://api.api-ninjas.com/v1/loremipsum?paragraphs={
-        paragraphs}&start_with_lorem_ipsum={start_with_lorem_ipsum}'
+    api_url = f'https://api.api-ninjas.com/v1/loremipsum?paragraphs={paragraphs}&start_with_lorem_ipsum={start_with_lorem_ipsum}'
     api_key = os.getenv('API_KEY')
 
     response = requests.get(api_url, headers={'X-Api-Key': api_key})
