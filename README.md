@@ -1,7 +1,7 @@
 Lorem Ipsum Generator
 =====================
 
-The **Lorem Ipsum Generator** is a simple application built with Python and Flask that consumes the API Ninjas Lorem Ipsum Generator API. This tool automatically generates placeholder text (Lorem Ipsum) paragraphs.
+The **Lorem Ipsum Generator** is a simple application built with Python and Flask that consumes the [API Ninjas Lorem Ipsum Generator API](https://api-ninjas.com/api/loremipsum). This tool automatically generates placeholder text (Lorem Ipsum) paragraphs.
 
 Requirements
 ------------
@@ -33,7 +33,7 @@ Installation
     
         pip install -r requirements.txt
     
-4.  Set up the `.env` file with your API key from API Ninjas:
+4.  Rename `.env.example`to `.env`and set it up with your API key from [API Ninjas](https://api-ninjas.com/):
     
         API_KEY="YOUR_API_KEY"
     
